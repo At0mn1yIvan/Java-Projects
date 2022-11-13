@@ -1,3 +1,5 @@
+package ClockClasses;
+
 public interface TimeInterface {
 
     String GetBrand();

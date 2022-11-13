@@ -1,3 +1,5 @@
+package ClockClasses;
+
 public class ThrowOutputException extends Exception {
     private int i = 0;
     private Hand hand;

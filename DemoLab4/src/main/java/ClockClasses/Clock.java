@@ -1,3 +1,5 @@
+package ClockClasses;
+
 public class Clock implements TimeInterface {
     protected int hour;
     protected int minute;
@@ -21,7 +23,7 @@ public class Clock implements TimeInterface {
     public String GetBrand() { return this.name; }
     public int GetPrice() { return this.cost; }
 
-    public void SetTime(Hand hand, int  value) throws ThrowOutputException{
+    public void SetTime(Hand hand, int  value) throws ThrowOutputException {
         if (value < 0)
             throw new ThrowOutputException(value, "Hours/Minutes/Seconds must be positive only\n");
         if (hand == Hand.HOUR) {
@@ -37,7 +39,7 @@ public class Clock implements TimeInterface {
         }
     }
 
-    public void IncTime(Hand hand, int  value) throws ThrowOutputException{
+    public void IncTime(Hand hand, int  value) throws ThrowOutputException {
         if (value < 0)
             throw new ThrowOutputException(value, "You can increase Hours/Minutes/Seconds only on positive values\n");
         if (hand == Hand.MINUTE )
@@ -54,11 +56,11 @@ public class Clock implements TimeInterface {
 
     @Override
     public String toString() {
-        return "Clock{" +
-                "hour=" + hour +
-                ", minute=" + minute +
-                ", name='" + name + '\'' +
-                ", cost=" + cost +
+        return "Clock{" + "\n" +
+                "hour=" + hour + "\n" +
+                ", minute=" + minute + "\n" +
+                ", name='" + name + "\'\n" +
+                ", cost=" + cost + "\n" +
                 '}';
     }
 }

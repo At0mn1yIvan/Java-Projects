@@ -1,4 +1,4 @@
-
+package ClockClasses;
 
 public class SubClock extends Clock{
     protected int second;
@@ -13,7 +13,7 @@ public class SubClock extends Clock{
     }
 
     @Override
-    public void SetTime(Hand hand, int  value) throws ThrowOutputException{
+    public void SetTime(Hand hand, int  value) throws ThrowOutputException {
         if (hand == Hand.HOUR || hand == Hand.MINUTE)
             super.SetTime(hand, value);
         if (hand == Hand.SECOND)
@@ -24,7 +24,7 @@ public class SubClock extends Clock{
     }
 
     @Override
-    public void IncTime(Hand hand, int  value) throws ThrowOutputException{
+    public void IncTime(Hand hand, int  value) throws ThrowOutputException {
         if (hand == Hand.SECOND)
             this.second += value;
         if (this.second > 59){
@@ -36,12 +36,12 @@ public class SubClock extends Clock{
 
     @Override
     public String toString() {
-        return "SubClock{" +
-                "hour=" + hour +
-                ", minute=" + minute +
-                ", second=" + second +
-                ", name='" + name + '\'' +
-                ", cost=" + cost +
+        return "SubClock{" + "\n" +
+                "hour=" + hour + "\n" +
+                ", minute=" + minute + "\n" +
+                ", second=" + second + "\n" +
+                ", name='" + name + "\'\n" +
+                ", cost=" + cost + "\n" +
                 '}';
     }
 }

@@ -1,9 +1,13 @@
+package ClockClasses;
+
 import java.util.*;
 
 public class ShopClock {
-    ArrayList<Clock> Watches = new ArrayList<>();
+    public ArrayList<Clock> Watches;
+
 
     public ShopClock(){
+        Watches = new ArrayList<>();
         Watches.add(new Clock("Gucci", 9000));
         Watches.add(new SubClock("Garmin", 2000));
         Watches.add(new Clock("Casio", 1000));
@@ -41,7 +45,8 @@ public class ShopClock {
         return sp_st;
 
     }
-    public void SetTimeAll(Hand hand, int value) throws ThrowOutputException{
+
+    public void SetTimeAll(Hand hand, int value) throws ThrowOutputException {
         for (Clock c: Watches){
             try {
                 c.SetTime(hand, value);
@@ -51,6 +56,7 @@ public class ShopClock {
             }
         }
     }
+
 
     public Clock MostExpWatch(){
         Comparator<Clock> comp = new Comparator<>() {
