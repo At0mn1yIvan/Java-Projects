@@ -1,8 +1,12 @@
 package ClockClasses;
 
+import javax.persistence.Entity;
+
+@Entity
 public class SubClock extends Clock{
     protected int second;
 
+    public SubClock(){}
     public SubClock(String _name, int _cost){
         super(_name, _cost);
         this.second = 0;

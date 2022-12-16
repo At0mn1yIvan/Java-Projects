@@ -1,9 +1,7 @@
 package com.example.demolab4;
 
 import ClockClasses.Hand;
-import ClockClasses.ShopClock;
 import ClockClasses.ThrowOutputException;
-import ClockClasses.TimeInterface;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
@@ -28,6 +26,8 @@ public class SetTimeAllController {
 
     @FXML
     private TextField TimeValueTextField;
+
+
 
 
     void setCheckBox(CheckBox SelChB, CheckBox OthChB1, CheckBox OthChB2){
@@ -71,5 +71,6 @@ public class SetTimeAllController {
         if (SetSecondsCheckBox.isSelected()){
             MainApplication.shop.SetTimeAll(Hand.SECOND, parseInt(TimeValueTextField.getText()));
         }
+
     }
 }

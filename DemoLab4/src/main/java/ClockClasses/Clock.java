@@ -1,11 +1,21 @@
 package ClockClasses;
 
-public class Clock implements TimeInterface {
+import javax.persistence.*;
+
+@Entity
+@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
+public class Clock implements Time {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    int id;
+
     protected int hour;
     protected int minute;
     protected String name;
     protected int cost;
 
+    public Clock(){}
     public Clock(String _name, int _cost){
         this.name = _name;
         this.cost = _cost;

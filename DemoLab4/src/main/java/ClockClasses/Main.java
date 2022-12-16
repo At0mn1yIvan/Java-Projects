@@ -1,12 +1,10 @@
 package ClockClasses;
 
+
 public class Main {
 
-
     public static void main(String[] args) {
-        ShopClock shop = new ShopClock();
         //shop.PrintAllBrands();
-        shop.MostExpWatch();
 
         SubClock two = new SubClock("Rolex", 5000);
 
