@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="MainScene" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demolab4.MainController">
+   <children>
+      <Button fx:id="MostExpensiveClockButton" layoutX="22.0" layoutY="417.0" mnemonicParsing="false" onMouseClicked="#onMostExpensiveClockButtonClicked" prefHeight="50.0" prefWidth="157.0" style="-fx-background-radius: 10; -fx-background-color: lightyellow; -fx-border-color: black; -fx-border-radius: 10;" text="Most Expensive watches" />
+      <Label alignment="CENTER" contentDisplay="TOP" layoutX="42.0" layoutY="22.0" prefHeight="44.0" prefWidth="417.0" text="Clock shop">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="PopularBrandButton" layoutX="22.0" layoutY="347.0" mnemonicParsing="false" onMouseClicked="#onPopularBrandButtonClicked" prefHeight="50.0" prefWidth="157.0" style="-fx-background-radius: 10; -fx-background-color: lightyellow; -fx-border-color: black; -fx-border-radius: 10;" text="Popular Brand" />
+      <Button fx:id="SetTimeAllButton" layoutX="321.0" layoutY="347.0" mnemonicParsing="false" onMouseClicked="#onSetTimeAllButtonClicked" prefHeight="50.0" prefWidth="157.0" style="-fx-background-radius: 10; -fx-background-color: lightyellow; -fx-border-color: black; -fx-border-radius: 10;" text="Set time on all clocks">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets></Button>
+      <Label fx:id="WatchLabel" alignment="CENTER" layoutX="143.0" layoutY="85.0" prefHeight="153.0" prefWidth="215.0" style="-fx-border-color: black;" />
+      <Button fx:id="PreviousWatchButton" layoutX="73.0" layoutY="129.0" mnemonicParsing="false" onMouseClicked="#onPreviousWatchButtonClicked" prefHeight="64.0" prefWidth="55.0" text="◀">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <Button fx:id="NextWatchButton" layoutX="372.0" layoutY="129.0" mnemonicParsing="false" onMouseClicked="#onNextWatchButtonClicked" text="▶">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <Button fx:id="AddNewWatchesButton" layoutX="321.0" layoutY="417.0" mnemonicParsing="false" onMouseClicked="#onAddNewWatchesButtonClicked" prefHeight="50.0" prefWidth="157.0" style="-fx-background-radius: 10; -fx-background-color: lightyellow; -fx-border-color: black; -fx-border-radius: 10;" text="Add new watches">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Button>
+   </children>
+</AnchorPane>
